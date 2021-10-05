@@ -1,9 +1,11 @@
-import "./hello-world-button.css";
+import "./hello-world-button.scss";
 
 function HelloWorldButton() {
+  const buttonCssClass = "hello-world-button";
+
   const button = document.createElement("button");
   button.innerHTML = "Hello World";
-  button.classList.add("hello-world-button");
+  button.classList.add(buttonCssClass);
 
   const body = document.querySelector("body");
   button.onclick = () => {
